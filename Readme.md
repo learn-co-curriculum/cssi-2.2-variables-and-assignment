@@ -6,63 +6,70 @@ languages: javascript
 #Variables and Assignment
 The interpreter has been great for doing little calculations, but it doesn't remember values from line to line. To help it remember, we will tell it we're making a variable.
 
-You’re probably familiar with variables from your high school math classes.
-
 We can think of a variable like a bucket. Inside of the bucket we can store data. The bucket has a name we declare, and we assign data(a value) to it using an '=' sign.
-
-Our variable names should be specific and relevant to so that it is easy for other developer to understand what goes inside.
 
 You need to declare variables explicitly in JavaScript with the var keyword like this:
 ```
->var color = "blue"
+>var students = 30
 ```
 `var` lets JavaScript know that you've just made a variable!
 
-Try typing your own variable. Give it a value, ask for that value, then change the value and as again, something like this:
+See the value of the variable by calling its name
 ```
->var color = "red"
->color
->var color = "green"
->color
+>students
+30
 ```
-
+If we reassign the variable, the value changes. We can change what’s in the bucket by putting something new in. Variables store data, and that data can be reassigned with the = sign.
+```
+>var instructors = 4
+>instructors
+4
+>var instructors = 6
+>instructors
+6
+```
 Don't worry about the "undefined" you get from the "var" lines; the interpreter is just telling you that variable assignment itself doesn't evaluate to anything. It doesn't need to: the point is that the value is remembered for later.
 
-The value returned by the console for the variable changes as we reassign the value of the var. We can change what’s in the bucket by putting something new in, we can change our variable by simply changing the value. That why they are “variables.” They store data, but that data can be reassigned with the = sign.
+We can put strings into variables:
 
-In mathematics this means equality, but in programming languages it means assignment. We're "assigning" a value to the label, attaching the sticker.)
+```
+> var cssi = "Google Computer Science Summer Institute"
+> var description = "A program for awesome rising college freshmen"
+> cssi
+"Google Computer Science Summer Institute"
+> description
+"A program for awesome rising college freshmen"
+```
+And we can use the variables in expressions - they act as if the value stored inside them is in the expression instead:
+```
+> students + instructors
+36
+> cssi + " - " + description
+"Google Computer Science Summer Institute - A program for awesome rising college freshmen"
+```
+We can assign variables to the results of expressions too:
+```
+>var humansInRoom= students + instructors
+>var info = cssi + " - " + description
+>humansInRoom
+36
+>info
+"Google Computer Science Summer Institute - A program for awesome rising college freshmen"
+```
 
-Try playing some more with variables:
-```
-> var humanLegs = 2
-> var catLegs = 4
-> humanLegs
-> catLegs + humanLegs
-> color + catLegs
-```
-What happens?
-```
-> HumanLegs
-```
 Note that variable names are case-sensitive, which means capital letters matter.
-
-For variable names consisting of multiple words you should use camelCase or snake_case (camelCase is generally what JS developers use by convention and is called that becauseTheLettersMakeHumpsInTheName)
-
-You can make one variable out of one or more other variable values:
 ```
-> var frankenLegs = humanLegs + catLegs
-> frankenLegs
+>info
+"Google Computer Science Summer Institute - A program for awesome rising college freshmen"
+>Info
+ERROR!!
 ```
+javascript thinks that 'info' and 'Info' are different things - the capitalized one is not defined!
 
-##Shorthand Operators
-Languages often have shortcuts for the most commonly used expressions - we have contractions in english (don't for do not, it's for it is, y'all for you all). In javascript, there are some convenient shortcuts for doing an operation and an assignment at the same time. To increase a variable x by 2, I know that I can use x = x + 2. With the shortcut, it's as easy as x += 2.
-
-Here's a list!
-| shortcut | original  |
-|----------|-----------|
-| x += y   | x = x + y |
-| x -= y   | x = x - y |
-| x *= y   | x = x * y |
-| x *= y   | x = x * y |
-| x /= y   | x = x / y |
-| x %= y   | x = x % y |
+Our variable names should be specific and relevant to so that it is easy for other developers to understand what goes inside.
+```
+var x = 30; // pretty unintelligible
+var number = 30; // what does the number mean?
+var studentCount = 30; // this one is pretty clear!
+```
+For variable names consisting of multiple words, we can use camelCase or snake_case. Usually, javascript developers use camelCase (called camelCase  becauseTheLettersMakeHumpsInTheName). In python, developers like snake_case (which sorta looks like a snake, if you squint.) snake_case is slightly easier to read, but it's most important to follow the established conventions, and especially to be consistent within a project. That way, other programmers can look at a word and tell in an instant whether it is a variable, or something else!
