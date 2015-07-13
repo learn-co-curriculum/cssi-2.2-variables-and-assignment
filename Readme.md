@@ -19,7 +19,8 @@ See the value of the variable by calling its name
 >students
 30
 ```
-If we reassign the variable, the value changes. We can change what’s in the bucket by putting something new in. Variables store data, and that data can be reassigned with the = sign.
+
+Variables store data, and that data can be reassigned with the = sign.
 ```
 >var instructors = 4
 >instructors
@@ -28,7 +29,8 @@ If we reassign the variable, the value changes. We can change what’s in the bu
 >instructors
 6
 ```
-Don't worry about the "undefined" you get from the "var" lines; the interpreter is just telling you that variable assignment itself doesn't evaluate to anything. It doesn't need to: the point is that the value is remembered for later.
+
+An "undefined" msg is the  the interpreter telling you that variable assignment itself doesn't evaluate to anything. 
 
 We can put strings into variables:
 
@@ -72,4 +74,4 @@ var x = 30; // pretty unintelligible
 var number = 30; // what does the number mean?
 var studentCount = 30; // this one is pretty clear!
 ```
-For variable names consisting of multiple words, we can use camelCase or snake_case. Usually, javascript developers use camelCase (called camelCase  becauseTheLettersMakeHumpsInTheName). In python, developers like snake_case (which sorta looks like a snake, if you squint.) snake_case is slightly easier to read, but it's most important to follow the established conventions, and especially to be consistent within a project. That way, other programmers can look at a word and tell in an instant whether it is a variable, or something else!
+For variable names consisting of multiple words, we can use camelCase or snake_case. Usually, javascript developers use camelCase (called camelCase  becauseTheLettersMakeHumpsInTheName).
