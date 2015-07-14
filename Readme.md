@@ -66,7 +66,7 @@ Note that variable names are case-sensitive, which means capital letters matter.
 >Info
 ERROR!!
 ```
-javascript thinks that 'info' and 'Info' are different things - the capitalized one is not defined!
+JavaScript thinks that 'info' and 'Info' are different things - the capitalized one is not defined!
 
 Our variable names should be specific and relevant to so that it is easy for other developers to understand what goes inside.
 ```
@@ -74,4 +74,4 @@ var x = 30; // pretty unintelligible
 var number = 30; // what does the number mean?
 var studentCount = 30; // this one is pretty clear!
 ```
-For variable names consisting of multiple words, we can use camelCase or snake_case. Usually, javascript developers use camelCase (called camelCase  becauseTheLettersMakeHumpsInTheName).
+For variable names consisting of multiple words, we can use camelCase or snake_case. Usually, JavaScript developers use camelCase (called camelCase  becauseTheLettersMakeHumpsInTheName).
