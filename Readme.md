@@ -75,3 +75,8 @@ var number = 30; // what does the number mean?
 var studentCount = 30; // this one is pretty clear!
 ```
 For variable names consisting of multiple words, we can use camelCase or snake_case. Usually, JavaScript developers use camelCase (called camelCase  becauseTheLettersMakeHumpsInTheName).
+
+Consistency in coding style is very important to maintain code readability in large projects. You can read Google's own style guidelines for Javascript and other languages here: http://google.github.io/styleguide/ .
+
+
+
