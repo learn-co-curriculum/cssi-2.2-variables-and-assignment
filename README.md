@@ -77,4 +77,4 @@ Consistency in coding style is very important to maintain code readability in la
 
 
 
-<a href='https://learn.co/lessons/cssi-2.2-variables-and-assignment' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cssi-2.2-variables-and-assignment' title='Variables and Assignment'>Variables and Assignment</a> on Learn.co and start learning to code for free.</p>
